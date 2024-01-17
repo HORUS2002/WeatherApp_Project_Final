@@ -3,61 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weatheria</title>
   </head>
   <body>
-    <header>
-      <form id="search-form">
-        <input
-          type="search"
-          placeholder="Enter a city..."
-          required
-          class="search-input"
-          id="search-input"
-        />
-        <input type="submit" value="Search" class="search-button" />
-      </form>
-    </header>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
 
-    <main>
-      <div class="current-weather">
-        <div>
-          <h1 class="current-city" id="current-city">Paris</h1>
-          <p class="current-details">
-            <span id="current-date"></span>, moderate rain <br />
-            Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
-          </p>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city">Paris</h1>
+            <p class="current-details">
+              <span id="current-date"></span>, moderate rain <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">☀️</span
+            ><span class="current-temperature-value" id="current-temperature"
+              >24</span
+            ><span class="current-temperature-unit">°C</span>
+          </div>
         </div>
-        <div class="current-temperature">
-          <span class="current-temperature-icon">☀️</span
-          ><span class="current-temperature-value" id="current-temperature"
-            >24</span
-          ><span class="current-temperature-unit">°C</span>
-        </div>
-      </div>
-    </main>
+      </main>
 
-    <footer>
-      <p>
-        Coded by
-        <a href="https://github.com/HORUS2002" target="_blank"
-          >Haryana Grande</a
-        >
-        and is open-sourced on
-        <a
-          href="https://github.com/HORUS2002/WeatherApp_Project_Final"
-          target="_blank"
-        >
-          GitHub</a
-        >
-        and hosted on
-        <a
-          href="https://weatheria-app-final-project.netlify.app/"
-          target="_blank"
-        >
-          Netlify</a
-        >
-      </p>
-    </footer>
+      <footer>
+        <p>
+          Coded by
+          <a href="https://github.com/HORUS2002" target="_blank"
+            >Haryana Grande</a
+          >
+          and is open-sourced on
+          <a
+            href="https://github.com/HORUS2002/WeatherApp_Project_Final"
+            target="_blank"
+          >
+            GitHub</a
+          >
+          and hosted on
+          <a
+            href="https://weatheria-app-final-project.netlify.app/"
+            target="_blank"
+          >
+            Netlify</a
+          >
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
