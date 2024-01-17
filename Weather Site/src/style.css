@@ -1,0 +1,19 @@
+body {
+  background: linear-gradient(
+    to left bottom,
+    rgb(255, 255, 255) 0.3%,
+    rgb(0, 225, 255) 55.8%,
+    rgb(0, 162, 255) 105.1%
+  );
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+}
+
+.weather-app {
+  background: white;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
