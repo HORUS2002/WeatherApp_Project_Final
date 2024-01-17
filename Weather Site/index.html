@@ -6,14 +6,44 @@
     <title>Weatheria</title>
   </head>
   <body>
-    <h1>Weatheria</h1>
+    <header>
+      <form id="search-form">
+        <input
+          type="search"
+          placeholder="Enter a city..."
+          required
+          class="search-input"
+          id="search-input"
+        />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+    </header>
+
+    <main>
+      <div class="current-weather">
+        <div>
+          <h1 class="current-city" id="current-city">Paris</h1>
+          <p class="current-details">
+            <span id="current-date"></span>, moderate rain <br />
+            Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+          </p>
+        </div>
+        <div class="current-temperature">
+          <span class="current-temperature-icon">☀️</span
+          ><span class="current-temperature-value" id="current-temperature"
+            >24</span
+          ><span class="current-temperature-unit">°C</span>
+        </div>
+      </div>
+    </main>
+
     <footer>
       <p>
         Coded by
         <a href="https://github.com/HORUS2002" target="_blank"
           >Haryana Grande</a
         >
-        and is on
+        and is open-sourced on
         <a
           href="https://github.com/HORUS2002/WeatherApp_Project_Final"
           target="_blank"
